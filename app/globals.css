@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Deep Navy family */
+  --color-navy: #0B1B3A;
+  --color-navy-surface: #14284B;
+  --color-navy-border: #24385E;
+  
+  /* Rose Gold family */
+  --color-rose: #E8B4A0;
+  --color-rose-hover: #D9A08C;
+  --color-rose-deep: #B76E79;
+  
+  /* Cream family */
+  --color-cream: #F7F1EA;
+  --color-cream-soft: #EFE6DC;
+  --color-cream-border: #E0D3C5;
+  
+  /* Text colors */
+  --color-charcoal: #1B2133;
+  --color-ivory: #F5EDE6;
+  --color-muted-blue: #9AA4B8;
+  --color-muted-grey: #6B7285;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+  }
+
+  ::selection {
+    background-color: var(--color-rose);
+    color: var(--color-navy);
+  }
+}
